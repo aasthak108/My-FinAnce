@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 8px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.transaction-item button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.transaction-item button.edit {
+    background-color: #2196F3;
+}
+
+#balance {
+    margin-bottom: 20px;
+}
+
+#balance-amount {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#report-container {
+    margin-bottom: 40px;
+}
+
+#chart-container {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    height: 300px; /* Adjust the height as needed */
+    text-align: center;
+}
+
+#report-container h2,
+#chart-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#chart-container h2 {
+    margin-bottom: 10px;
+}
+
+#chart-button {
+    display: block;
+    margin: 10px auto 0;
+}
+
+#report-content {
+    background-color: white;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #86c5ef;
+    }
+}
